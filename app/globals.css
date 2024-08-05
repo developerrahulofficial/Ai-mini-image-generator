@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* app/globals.css */
+
+/* Import the custom font */
+@font-face {
+  font-family: 'DuranBold';
+  src: url('/font/Duran-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'DuranBold', Arial, sans-serif;
+  background-color: #000; /* Set the background color to black */
+  color: #fff; /* Set the text color to white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure body takes full height of the viewport */
+}
+
+.container {
+  max-width: 800px; /* Set a maximum width for the container */
+  width: 100%;
+  padding: 20px; /* Add some padding for breathing space */
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black; /* Slightly lighter background for the header */
+  border-radius: 10px; /* Optional: Add border radius to the header */
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.firstline {
+  font-size: small;
+  font-family: 'Duran',sans-serif;
+  letter-spacing: 2px;
+}
+
+.quote {
+  font-size: 30px;
+}
+
+.red {
+  color: red;
+}
+
+.generator {
+  padding: 50px;
+  text-align: center;
+  background-color: black; /* Slightly lighter background for the generator */
+  border-radius: 10px; /* Optional: Add border radius to the generator */
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card img {
+  border: 2px solid #fff; /* Optional: Add a border to the images for better visibility */
+  border-radius: 10px; /* Optional: Add border radius to the images */
+}
+
+.prompt-input {
+  margin-top: 20px;
+}
+
+.prompt-input textarea {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: #333; /* Set the textarea background color to a dark gray */
+  color: #fff; /* Set the textarea text color to white */
+  border: 1px solid #fff; /* Set the textarea border color to white */
+  border-radius: 10px; /* Optional: Add border radius to the textarea */
+  padding: 10px;
+}
+
+.prompt-input button {
+  background-color: #444; /* Set the button background color to a dark gray */
+  color: #fff; /* Set the button text color to white */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Add border radius to the button */
+}
+
+.prompt-input button:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+}
