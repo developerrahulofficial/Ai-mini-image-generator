@@ -37,7 +37,7 @@ const PromptInput = ({ onImagesGenerated }) => {
           text: prompt,
         }, {
           headers: {
-            'Api-Key': process.env.NEXT_PUBLIC_DEEPAI_API_KEY,
+            'Api-Key': '2ea270cc-eaac-4bd4-8478-5b053811887d',
             'Content-Type': 'application/x-www-form-urlencoded',
           },
         });
